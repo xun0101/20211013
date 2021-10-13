@@ -13,33 +13,167 @@
       font-family: '微軟正黑體';
       box-sizing: border-box;
     }
+    *,
+    body{
+      width: 100%;
+      height: 100%;
+      /* margin: 0; */
+    }
+    body{
+    position: relative;
+    }
+    .wda{
+    width: 15%;
+    height: 30%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
     .text{
       position: relative;
+      display: flex;
+      flex-direction: row;
     }
-    .text p{
-      float: left;
+    .text div{
+      width: 50%;
+      text-align: center;
     }
-    .text p:nth-child(2){
-    position: absolute;
-    right: 0;
+
+    img{
+      width: 100%;
+      height: 80%;
+      Object-fit:contain;
     }
+
+    .css {
+      width: 10%;
+      height: 30%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      left: 25%;
+    }
+
+    .html{
+      width: 10%;
+      height: 30%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      top:5%;
+      left: 3%;
+    }
+    .js{
+      width: 10%;
+      height: 30%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      top:50%;
+      left: 10%;
+    }
+    .jq{
+      width: 20%;
+      height: 30%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      left: 21%;
+      top: 60%;
+    }
+    .bo{
+      width: 10%;
+      height: 25%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      right: 20%;
+      top: 3%;
+    }
+    .vue{
+      width: 20%;
+      height: 30%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      right: 10%;
+      top:55%;
+    }
+    .sass{
+      width: 15%;
+      height: 16%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      right: 3%;
+      top:25%;
+    }
+
   </style>
 </head>
 <body>
   <div class="wda">
-    <img src="./ROC_Workforce_Development_Agency_Logo.svg.png" >
+    <img src="./ROC_Workforce_Development_Agency_Logo.svg.png" style="width: 100%; height: 100%; Object-fit:contain;">
     <h1>泰山職訓局</h1>
     <h3>從零開始的網頁設計課程</h3>
-    <div class="text">
-    <p>轉職網頁開發人員 
+    <div class="text"> 
+    <div>轉職網頁開發人員
       <br>
-      由淺入深學習技術 
-    </p>
-    <p>掌握就業必備職能
+      由淺入深學習技術
+    </div>
+    <div>掌握就業必備技能
       <br>
       強化職場的競爭力
-    </p>
+    </div>
   </div>
+</div>
+<div class="css">
+  <img src="./css.png">
+  <h2>CSS3</h2>
+</div>
+<div class="html">
+  <img src="./html.png" >
+  <h2>Html</h2>
+</div>
+<div class="js">
+  <img src="./js.png" >
+  <h2>JavaScript</h2>
+</div>
+<div class="jq">
+  <img src="./jQu.jpg" style="width: 100%; height: 100%; Object-fit:cover;">
+  <h2>jQuery</h2>
+</div>
+<div class="bo">
+  <img src="./b.jpg" style="margin-bottom:2rem">
+  <h2>BootStrap</h2>
+</div>
+<div class="vue">
+  <img src="./vue.png">
+  <h2>Vue.js</h2>
+</div>
+<div class="sass">
+  <img src="./sass.png" style="width: 100%; height: 100%; Object-fit:cover;">
+  <h2>Sass</h2>
 </div>
 </body>
 </html>
