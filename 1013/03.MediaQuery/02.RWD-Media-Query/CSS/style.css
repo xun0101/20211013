@@ -1,0 +1,171 @@
+:root{
+  --lightCoffee:#bfa065;
+  --lightGray:#f2f2f2;
+  --midGray:#808080;
+  --deepGrap:#333333;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Roboto" "Arial" "sans-serif";
+}
+
+.container{
+  width:85%;
+  margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.btn{
+  display: inline-block;
+  border: 2px solid var(--lightCoffee);
+  line-height: 1.4;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+/* max-width 當圖片尺寸大於父元素尺寸，圖片會以父元素尺寸為主 */
+img{
+  max-width: 100%;
+  vertical-align: middle;
+}
+/* 各大區塊定位，子元素若要定位才會在各大區塊內 */
+#section01,
+#section02,
+#section03{
+  position: relative;
+}
+
+/* section01__________________________ */
+#section01{
+  background: url("../images/images/section01-bg.jpg")no-repeat center/cover;
+}
+
+#section01 .content{
+  width: 80%;
+  padding: 6rem 1rem;
+}
+
+#section01 .content h1{
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: "Oswald",sans-serif;
+  color: var(--lightCoffee); 
+}
+
+#section01 .content p {
+  margin: 40px 0 0;
+  color: var(--midGray);
+}
+
+#section01 .content a{
+  color: var(--midGray);
+  text-decoration: none;
+  margin: 40px 0 0;
+}
+
+/* section02__________________________ */
+#section02{
+  background-color: var(--lightGray);
+  padding: 0 0 5rem 0;
+  display: flow-root;
+}
+#section02 .row{
+  margin-top: -40px;
+}
+
+#section02 .row .col{
+  margin-bottom: 30px;
+}
+
+#section02 .card{
+  padding: 2rem 1rem 0;
+  text-align: center;
+  background: #fff;
+  border: 3px solid var(--lightCoffee);
+}
+#section02 .card img{
+  width: 60px;
+}
+
+#section02 .card h1{
+  font-size: 1.5rem;
+}
+#section02 .card p{
+  line-height: 1.5;
+  color: var(--midGray);
+  font-style: italic;
+}
+/* section03_________ */
+#section03{
+  text-align: center;
+}
+#section03 .content{
+  padding: 2rem 0;
+}
+
+#section03 .content p{
+  color: var(--midGray);
+}
+#section03 .row .col{
+  margin-bottom: 30px;
+}
+
+/* media query________________ */
+
+@media(min-width:768px){
+  .container{
+    width: 720px;
+  }
+  #section03 .row{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  #section03 .row .col{
+    width: 50%;
+    padding: 0 1rem;
+  }
+}
+@media(min-width: 1200px){
+  .container{
+    width: 1140px;
+  }
+  #section01{
+    height: 100vh;
+  }
+  #section01 .content{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #section01 .content h1{
+  font-size: 6rem;
+  margin: 3rem 0;
+  }
+  #section01 .content p{
+    font-size: 1.275rem;
+  }
+  #section01 .content a{
+    margin-top: 2rem;
+  }
+  /* section02 */
+  #section02 .row{
+    display: flex;
+  }
+  #section02 .row .col{
+    width: 33.3333%;
+    margin-bottom: 0;
+    padding: 0 1rem;
+  }
+  /* section03 */
+  #section03 .row .col{
+    width: 33.3333%;
+  }
+}
+

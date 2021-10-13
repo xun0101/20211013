@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 500px;
+      height: 500px;
+      border: 1rem solid #ffee90;
+    }
+    .bg{
+      background-image: url(./01.jpg.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    .Object-fit{
+      /* 1.先將圖片塞滿容器 width height 100% ，若圖片尺寸與容器比例不一樣，圖片會變形*/
+      width: 100%;
+      height: 100%;
+      /* 設置 object-fit cover contain */
+      Object-fit:contain;
+      /* 設置 object-position調整圖片位置，跟background-position一樣，第一數值水平，第二數值垂直 */
+      object-position: 85% 50%;
+      object-position: 85%;
+    }
+  </style>
+</head>
+<body>
+  <h1>背景圖</h1>
+  <p>調製背景容器大小時，可以設定background-size: cover</p>
+  <div class="box bg"></div>
+
+  <h1>圖片 Object-fit</h1>
+  <p>將圖片放入一個容器時，圖片太大又不想用影像處理軟體調整比例</p>
+  <div class="box">
+    <img class="Object-fit" src="02.jpg.jpg" alt="">
+  </div>
+</body>
+</html>
