@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: '微軟正黑體';
+      box-sizing: border-box;
+    }
+    *,
+    body{
+      width: 100%;
+      height: 100%;
+    }
+    body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+/* wda */
+    .wda{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+    .con{
+      display: flex;
+      flex-direction: column;
+    }
+    .text{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .text div{
+      text-align: left;
+      padding: 5px;
+    }
+    .text div:nth-child(1){
+      text-align: right;
+    }
+
+    img{
+      width: 70%;
+      height: 70%;
+      Object-fit:contain;
+    }
+
+    /* html */
+    .html{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* css */
+    .css {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* js */
+    .js{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* jq */
+.jq{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* bo */
+    .bo{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* vue */
+    .vue{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* sass */
+    .sass{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    @media(min-width:576px){
+      hr{
+        display: none;
+      }
+      p{
+        display: none;
+      }
+    .wda{
+    width: 15%;
+    height: 30%;
+    /* border: 1px solid black; */
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+    .text{
+      /* position: relative; */
+      display: flex;
+      flex-direction: row;
+    }
+    .text div{
+      width: 50%;
+      text-align: center;
+    }
+
+    img{
+      width: 100%;
+      height: 80%;
+      Object-fit:contain;
+    }
+
+    .css {
+      width: 10%;
+      height: 30%;
+      /* border: 1px solid black; */
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      position: absolute;
+      left: 25%;
+    }
+    .css::before{
+      content: '';
+      border:1px solid gray;
+      width: 100%;
+      transform-origin: center;
+      transform: rotate(40deg);
+      position: absolute;
+      left: 80%;
+      bottom: 10%;
+    }
+
+    .html{
+      width: 10%;
+      height: 30%;
+      /* border: 1px solid black; */
+      text-align: center;
+      position: absolute;
+      top:5%;
+      left: 3%;
+    }
+    .html::before{
+      content: '';
+      border:1px solid gray;
+      width: 300%;
+      transform-origin: center;
+      transform: rotate(15deg);
+      position: absolute;
+      left:90%;
+      bottom: 10%;
+    }
+    .js{
+      width: 10%;
+      height: 30%;
+      /* border: 1px solid black; */
+      text-align: center;
+      position: absolute;
+      top:50%;
+      left: 10%;
+    }
+    .js::before{
+      content: '';
+      border:1px solid gray;
+      width: 250%;
+      transform-origin: center;
+      transform: rotate(160deg);
+      position: absolute;
+      left:90%;
+      bottom: 80%;
+      z-index: 1;
+    }
+    .jq{
+      width: 20%;
+      height: 30%;
+      /* border: 1px solid black; */
+      text-align: center;
+      position: absolute;
+      left: 21%;
+      bottom: 0;
+    }
+    .jq::before{
+      content: '';
+      border:1px solid gray;
+      width: 30%;
+      transform-origin: center;
+      transform: rotate(140deg);
+      position: absolute;
+      right: 0%;
+      top: 10%;
+      z-index: 1;
+    }
+    .bo{
+      width: 10%;
+      height: 25%;
+      /* border: 1px solid black; */
+      text-align: center;
+      position: absolute;
+      right: 20%;
+      top: 3%;
+    }
+    .bo::before{
+      content: '';
+      border:1px solid gray;
+      width: 150%;
+      transform-origin: center;
+      transform: rotate(150deg);
+      position: absolute;
+      right:90%;
+      bottom: 10%;
+      z-index: 1;
+    }
+    .vue{
+      width: 20%;
+      height: 30%;
+      /* border: 1px solid black; */
+      text-align: center;
+      position: absolute;
+      right: 10%;
+      bottom:5%;
+    }
+    .vue::before{
+      content: '';
+      border:1px solid gray;
+      width: 80%;
+      transform-origin: center;
+      transform: rotate(25deg);
+      position: absolute;
+      right:80%;
+      top: 0%;
+      z-index: 1;
+    }
+    .sass{
+      width: 15%;
+      height: 16%;
+      /* border: 1px solid black; */
+      text-align: center;
+      position: absolute;
+      right: 3%;
+      top:25%;
+    }
+    .sass::before{
+      content: '';
+      border:1px solid gray;
+      width: 180%;
+      transform-origin: center;
+      transform: rotate(170deg);
+      position: absolute;
+      right:90%;
+      bottom: 10%;
+      z-index: 1;
+    }
+  }
+
+  </style>
+</head>
+<body>
+  <div class="wda">
+    <img src="./ROC_Workforce_Development_Agency_Logo.svg.png" >
+    <h1>泰山職訓局</h1>
+    <div class="con">
+    <h2>從零開始的網頁設計課程</h2>
+    <div class="text"> 
+    <div>轉職網頁開發人員
+      <br>
+      由淺入深學習技術
+    </div>
+    <div>掌握就業必備技能
+      <br>
+      強化職場的競爭力
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+<div class="html">
+  <img src="./html.png" >
+  <h2>Html</h2>
+  <p>超文本標記語言（英語：HyperText Markup Language，簡稱：HTML）是一種用於建立網頁的標準標記語言。HTML是一種基礎技術，常與CSS、JavaScript一起被眾多網站用於設計網頁、網頁應用程式以及行動應用程式的使用者介面[3]。網頁瀏覽器可以讀取HTML檔案，並將其彩現成視覺化網頁。HTML描述了一個網站的結構語意隨著線索的呈現，使之成為一種標記語言而非程式語言。</p>
+</div>
+<hr>
+<div class="css">
+  <img src="./css.png">
+  <h2>CSS3</h2>
+  <p>階層式樣式表（英語：Cascading Style Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、階層式樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。CSS 被分為不同等級：CSS1 現已廢棄， CSS2.1 是推薦標準， CSS3 分成多個小模組且正在標準化中。[來源請求]CSS3現在已被大部分現代瀏覽器支援，而下一版的CSS4仍在開發中。</p>
+</div>
+<hr>
+<div class="js">
+  <img src="./js.png" >
+  <h2>JavaScript</h2>
+  <p>1993年，國家超級電腦應用中心（NCSA）發表了NCSA Mosaic，這是最早流行的圖形介面網頁瀏覽器，它在全球資訊網的普及上發揮了重要作用[11]。1994年，Mosaic的主要開發人員隨即創立了Netscape公司，並雇用了許多原來的NCSA Mosaic開發者用來開發Netscape Navigator，該公司的目標是取代NCSA Mosaic成為世界第一的網頁瀏覽器。在四個月內，已經佔據了四分之三的瀏覽器市場，並成為1990年代網際網路的主要瀏覽器[12]。網景預見到網路需要變得更動態。公司的創始人馬克·安德森認為HTML需要一種膠水語言，讓網頁設計師和兼職程式設計師可以很容易地使用它來組裝圖片和外掛程式之類的元件，且程式碼可以直接編寫在網頁標記中。</p>
+</div>
+<hr>
+<div class="jq">
+  <img src="./jQu.jpg" style="width: 100%; height: 100%; Object-fit:cover;">
+  <h2>jQuery</h2>
+  <p>簡介 jQuery是開源軟體，使用MIT授權條款授權。[6] jQuery的語法設計使得許多操作變得容易，如操作文件（document）、選擇文件物件模型（DOM）元素、建立動畫效果、處理事件、以及開發Ajax程式。jQuery也提供了給開發人員在其上建立外掛程式的能力。這使開發人員可以對底層互動與動畫、進階效果和進階主題化的組件進行抽象化。模組化的方式使jQuery函式庫能夠建立功能強大的動態網頁以及網路應用程式。</p>
+</div>
+<hr>
+<div class="bo">
+  <img src="./b.jpg" style="margin-bottom:2rem">
+  <h2>BootStrap</h2>
+  <p>Bootstrap是一組用於網站和網路應用程式開發的開源前端（所謂「前端」，指的是展現給終端使用者的介面。與之對應的「後端」是在伺服器上面執行的代碼）框架，包括HTML、CSS及JavaScript的框架，提供字體排印、表單、按鈕、導航及其他各種元件及Javascript擴充套件，旨在使動態網頁和Web應用的開發更加容易。</p>
+</div>
+<hr>
+<div class="vue">
+  <img src="./vue.png">
+  <h2>Vue.js</h2>
+  <p>Vue.js（/vjuː/，或簡稱為Vue）是一個用於建立使用者介面的開源JavaScript框架，也是一個建立單頁應用的Web應用框架[4]。2016年一項針對JavaScript的調查表明，Vue有著89%的開發者滿意度。[5]在GitHub上，該專案平均每天能收穫95顆星，[5][6]為Github有史以來星標數第3多的專案。</p>
+</div>
+<hr>
+<div class="sass">
+  <img src="./sass.png" style="width: 100%; height: 100%; Object-fit:cover;">
+  <h2>Sass</h2>
+  <p>Sass（英文全稱：Syntactically Awesome Stylesheets）是一個最初由Hampton Catlin設計並由Natalie Weizenbaum開發的層疊樣式表語言。[2][3]在開發最初版本之後，Weizenbaum和Chris Eppstein繼續通過SassScript來繼續擴充Sass的功能。SassScript是一個在Sass檔案中使用的小型手稿語言。</p>
+</div>
+</body>
+</html>
